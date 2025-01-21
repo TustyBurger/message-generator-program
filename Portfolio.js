@@ -25,7 +25,7 @@ function indexArrays() {
 let words = indexArrays();
 
 let sentence = words.Verb + " " + words.Adjective + " " + words.Noun + ".";
-//console.log(indexArrays());
+
 console.log(sentence);
 
 
