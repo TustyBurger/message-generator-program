@@ -6,10 +6,14 @@ const arrayAdjective = ['vibrant', 'mysterious', 'serene', 'gritty', 'eccentric'
 
 const arrayNoun = ['Fox', 'Ox', 'Pig', 'Cat', 'Pony'];
 
+function randomIndex(array) {
+    return Math.floor(Math.random() * array.length);
+}
+
 function indexArrays() {
-    let verbIndex = Math.floor(Math.random() * arrayVerb.length);
-    let adjectiveIndex = Math.floor(Math.random() * arrayAdjective.length);
-    let nounIndex = Math.floor(Math.random() * arrayNoun.length);
+    let verbIndex = randomIndex(arrayVerb);
+    let adjectiveIndex = randomIndex(arrayAdjective);
+    let nounIndex = randomIndex(arrayNoun);
     
     return {
         Verb: arrayVerb[verbIndex],
